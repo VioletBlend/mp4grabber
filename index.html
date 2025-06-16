@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>YouTube Downloader</title>
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <h1 class="text-center text-primary">YouTube Downloader</h1>
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form id="downloadForm">
+                    <div class="mb-3">
+                        <label for="videoUrl" class="form-label">YouTube Video URL</label>
+                        <input type="text" class="form-control" id="videoUrl" placeholder="Enter YouTube Video URL" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quality" class="form-label">Select Quality</label>
+                        <select class="form-select" id="quality" required>
+                            <option value="highestvideo">Highest Quality</option>
+                            <option value="lowestvideo">Lowest Quality</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Download</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
